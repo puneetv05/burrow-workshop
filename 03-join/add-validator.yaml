@@ -1,0 +1,18 @@
+jobs:
+- name: AddValidator
+  update-account:
+    target: $Target
+    power: 999999991
+    native: 9999999999
+
+# Pull power from the validator set in the result of query-vals
+- name: CheckPower
+  query-vals:
+    field: "Set.${AddValidator.address}.Power"
+
+# Check the power supplied in AddValidator matches the queried value
+- name: AssertPowerEqual
+  assert:
+    key: $CheckPower
+    relation: eq
+    val: $AddValidator.power
