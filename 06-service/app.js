@@ -16,7 +16,7 @@ function slurp(file) {
 }
 
 // TODO: put your own key address here:
-let accountAddress = "416438142FEB2549E86696D8DD77C9DA672CA432"
+let accountAddress = "XXXXXXXXXXXXXX"
 // Connect to running burrow chain using the account address to identify our input account and return values as an object
 // using named returns where provided
 let chain = burrow.createInstance(chainURL, accountAddress, {objectReturn: true})
