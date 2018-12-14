@@ -1,0 +1,36 @@
+[Tendermint]
+  Seeds = ""
+  SeedMode = false
+  PersistentPeers = "tcp://08ab85cd06742e9bc3004323f9b99072617b4ee5@000.peers.workshop.agreements.network:26656,tcp://642dacac7c93913625f262d6a168125c2fb26f4b@001.peers.workshop.agreements.network:26656,tcp://0475556b0330d0184c7263a7416113b1e33a2294@002.peers.workshop.agreements.network:26656,tcp://b969867ab7e39845c2e2f1d9e6ab2b3623dd234b@003.peers.workshop.agreements.network:26656"
+  ListenAddress = "tcp://0.0.0.0:26656"
+  ExternalAddress = ""
+  Moniker = ""
+  TendermintRoot = ".burrow"
+[Execution]
+[Keys]
+  GRPCServiceEnabled = true
+  AllowBadFilePermissions = true
+  RemoteAddress = ""
+  KeysDirectory = "/keys"
+[RPC]
+  [RPC.Info]
+    Enabled = true
+    ListenAddress = "tcp://0.0.0.0:26658"
+  [RPC.Profiler]
+    Enabled = false
+    ListenAddress = "tcp://0.0.0.0:6060"
+  [RPC.GRPC]
+    Enabled = true
+    ListenAddress = "0.0.0.0:10997"
+  [RPC.Metrics]
+    Enabled = true
+    ListenAddress = "tcp://0.0.0.0:9102"
+    MetricsPath = "/metrics"
+    BlockSampleSize = 100
+[Logging]
+  ExcludeTrace = true
+  NonBlocking = true
+  [Logging.RootSink]
+    [Logging.RootSink.Output]
+      OutputType = "stderr"
+      Format = "json"

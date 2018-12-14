@@ -1,0 +1,262 @@
+{
+	"GenesisTime": "2018-12-14T12:29:55.269844832Z",
+	"ChainName": "workshop.agreements.network",
+	"Params": {
+		"ProposalThreshold": 3
+	},
+	"GlobalPermissions": {
+		"Base": {
+			"Perms": "send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | hasRole",
+			"SetBit": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole"
+		}
+	},
+	"Accounts": [
+		{
+			"Address": "BE601DEE6E3AFD05BBB976CC98B9E7ACFD9C3DB8",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "67A644D165140CA74F2791DDF7163A136F4D12FBCD46E8EFBF2CE21C91A15E5E"
+			},
+			"Amount": 999999999999,
+			"Name": "Account_0",
+			"Permissions": {
+				"Base": {
+					"Perms": "send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | hasRole",
+					"SetBit": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole"
+				}
+			}
+		},
+		{
+			"Address": "583BE912E36BDB8ECE3B04CC951A68D50548FCB8",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "499253003A7F8F5EBC054E8538F4E272FBA1B3D5DC9189AB169FEA287B8C228C"
+			},
+			"Amount": 999999999999,
+			"Name": "billings",
+			"Permissions": {
+				"Base": {
+					"Perms": "send | call | createContract | createAccount | name | hasRole",
+					"SetBit": "send | call | createContract | createAccount | name | hasRole"
+				}
+			}
+		},
+		{
+			"Address": "25D8873AC4EA0152AFC8A86632EE25D2AE75FA63",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "A0812B7BD8AD0B9DA84E879421F1A5BD914A07EFF5689B099AAC110F0A878C45"
+			},
+			"Amount": 999999999999,
+			"Name": "monax_api_key",
+			"Permissions": {
+				"Base": {
+					"Perms": "send | call | hasRole",
+					"SetBit": "send | call | hasRole"
+				}
+			}
+		},
+		{
+			"Address": "FCFDE7BF198A907C8F3F6D34B4151CF7F6D26E43",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "FC214E0DBE2A7F49089F355CEACEB11014D71D46B97610DDBF521E01251D734E"
+			},
+			"Amount": 9999999999,
+			"Name": "compleatang",
+			"Permissions": {
+				"Base": {
+					"Perms": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole",
+					"SetBit": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole"
+				}
+			}
+		},
+		{
+			"Address": "5CCCD0E99199EAB1BCF0AAA5915ED0DA8D84C21C",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "5F0577625C94E3237C800DFAD3FB0949A1761C3013B40E53CC5F64F576BFB985"
+			},
+			"Amount": 9999999999,
+			"Name": "silasdavis",
+			"Permissions": {
+				"Base": {
+					"Perms": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole",
+					"SetBit": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole"
+				}
+			}
+		},
+		{
+			"Address": "ADBBE356D6537E13C8E84D0B1C350DBC276EE0C4",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "79D0A1FEDBF8D5C5AB04BAA8D9CADB4612C60407AE56BB15A185B0EDF7C5371B"
+			},
+			"Amount": 9999999999,
+			"Name": "gregdhill",
+			"Permissions": {
+				"Base": {
+					"Perms": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole",
+					"SetBit": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole"
+				}
+			}
+		},
+		{
+			"Address": "FDA50F50BD18C5CDC103A912757C26C1EBD6857E",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "06BAD9F48F23967B14D5726893E2A7CCD07534907EF12D73B704C1C570B76EAA"
+			},
+			"Amount": 9999999999,
+			"Name": "seanyoung",
+			"Permissions": {
+				"Base": {
+					"Perms": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole",
+					"SetBit": "root | send | call | createContract | createAccount | bond | name | proposal | input | batch | hasBase | setBase | unsetBase | setGlobal | hasRole | addRole | removeRole"
+				}
+			}
+		},
+		{
+			"Address": "EBAB5FC6E1EA829FE38CAB0338018A15E02A7C0B",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "B68B811F0A0BFEA1401450BD524A2732B097949C0C2B98E74B9CA8CECDFBD772"
+			},
+			"Amount": 9999999999,
+			"Name": "Validator_0",
+			"Permissions": {
+				"Base": {
+					"Perms": "bond",
+					"SetBit": "bond"
+				}
+			}
+		},
+		{
+			"Address": "22968121FAA3BE3889CD2BF8C588A92EFFEC5BAF",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "C18F28BACB2AACE976814A3E19C27EEF5D4D47E9820CE39F54C4C2A315BC0892"
+			},
+			"Amount": 9999999999,
+			"Name": "Validator_1",
+			"Permissions": {
+				"Base": {
+					"Perms": "bond",
+					"SetBit": "bond"
+				}
+			}
+		},
+		{
+			"Address": "FEB6A703D70E66A252439D5BA2FD5A4B89DB8BF9",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "F22A2009105667A47221A6C043887C916F07F65573FB87724861AE594329513F"
+			},
+			"Amount": 9999999999,
+			"Name": "Validator_2",
+			"Permissions": {
+				"Base": {
+					"Perms": "bond",
+					"SetBit": "bond"
+				}
+			}
+		},
+		{
+			"Address": "664FC43F3B433E08095F404D764F9456329984A4",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "501CE13A9AC44B603B903E30E38198541683C78BF1BC246080A71088F65C4E97"
+			},
+			"Amount": 9999999999,
+			"Name": "Validator_3",
+			"Permissions": {
+				"Base": {
+					"Perms": "bond",
+					"SetBit": "bond"
+				}
+			}
+		}
+	],
+	"Validators": [
+		{
+			"Address": "EBAB5FC6E1EA829FE38CAB0338018A15E02A7C0B",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "B68B811F0A0BFEA1401450BD524A2732B097949C0C2B98E74B9CA8CECDFBD772"
+			},
+			"Amount": 9999999998,
+			"NodeAddress": "08AB85CD06742E9BC3004323F9B99072617B4EE5",
+			"Name": "Validator_0",
+			"UnbondTo": [
+				{
+					"Address": "EBAB5FC6E1EA829FE38CAB0338018A15E02A7C0B",
+					"PublicKey": {
+						"CurveType": "ed25519",
+						"PublicKey": "B68B811F0A0BFEA1401450BD524A2732B097949C0C2B98E74B9CA8CECDFBD772"
+					},
+					"Amount": 9999999998
+				}
+			]
+		},
+		{
+			"Address": "22968121FAA3BE3889CD2BF8C588A92EFFEC5BAF",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "C18F28BACB2AACE976814A3E19C27EEF5D4D47E9820CE39F54C4C2A315BC0892"
+			},
+			"Amount": 9999999998,
+			"NodeAddress": "642DACAC7C93913625F262D6A168125C2FB26F4B",
+			"Name": "Validator_1",
+			"UnbondTo": [
+				{
+					"Address": "22968121FAA3BE3889CD2BF8C588A92EFFEC5BAF",
+					"PublicKey": {
+						"CurveType": "ed25519",
+						"PublicKey": "C18F28BACB2AACE976814A3E19C27EEF5D4D47E9820CE39F54C4C2A315BC0892"
+					},
+					"Amount": 9999999998
+				}
+			]
+		},
+		{
+			"Address": "FEB6A703D70E66A252439D5BA2FD5A4B89DB8BF9",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "F22A2009105667A47221A6C043887C916F07F65573FB87724861AE594329513F"
+			},
+			"Amount": 9999999998,
+			"NodeAddress": "0475556B0330D0184C7263A7416113B1E33A2294",
+			"Name": "Validator_2",
+			"UnbondTo": [
+				{
+					"Address": "FEB6A703D70E66A252439D5BA2FD5A4B89DB8BF9",
+					"PublicKey": {
+						"CurveType": "ed25519",
+						"PublicKey": "F22A2009105667A47221A6C043887C916F07F65573FB87724861AE594329513F"
+					},
+					"Amount": 9999999998
+				}
+			]
+		},
+		{
+			"Address": "664FC43F3B433E08095F404D764F9456329984A4",
+			"PublicKey": {
+				"CurveType": "ed25519",
+				"PublicKey": "501CE13A9AC44B603B903E30E38198541683C78BF1BC246080A71088F65C4E97"
+			},
+			"Amount": 9999999998,
+			"NodeAddress": "B969867AB7E39845C2E2F1D9E6AB2B3623DD234B",
+			"Name": "Validator_3",
+			"UnbondTo": [
+				{
+					"Address": "664FC43F3B433E08095F404D764F9456329984A4",
+					"PublicKey": {
+						"CurveType": "ed25519",
+						"PublicKey": "501CE13A9AC44B603B903E30E38198541683C78BF1BC246080A71088F65C4E97"
+					},
+					"Amount": 9999999998
+				}
+			]
+		}
+	]
+}
