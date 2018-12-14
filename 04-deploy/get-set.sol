@@ -1,13 +1,21 @@
-pragma solidity >=0.0.0;
+contract simplestorage {
+    uint public storedData;
 
-contract Storage {
-  int storedData;
+    function set(uint value) public {
+        storedData = value;
+    }
 
-  function set(int x) public {
-    storedData = x;
-  }
+    function get() public view returns (uint value) {
+        return storedData;
+    }
 
-  function get() constant public returns (int retVal) {
-    return storedData;
-  }
+    // Since transactions are executed atomically we can implement this concurrency primitive in Solidity with the
+    // desired behaviour
+    function testAndSet(uint expected, uint newValue) public returns (uint value, bool success) {
+        if (storedData == expected) {
+            storedData = newValue;
+            return (storedData, true);
+        }
+        return (storedData, false);
+    }
 }
