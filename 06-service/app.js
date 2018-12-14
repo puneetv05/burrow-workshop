@@ -7,7 +7,6 @@ const bodyParser = require('body-parser')
 let chainURL = '127.0.0.1:10997'
 const abiFile = 'bin/simplestorage.bin'
 const deployFile = 'deploy.output.json'
-const accountFile = 'account.json'
 
 // Port to run example on locally
 const exampleAppPort = 3000
@@ -16,11 +15,11 @@ function slurp(file) {
     return JSON.parse(fs.readFileSync(file, 'utf8'))
 }
 
-// Grab the account file that is expected to have 'Address' field
-let account = slurp(accountFile)
+// TODO: put your own key address here:
+let accountAddress = "416438142FEB2549E86696D8DD77C9DA672CA432"
 // Connect to running burrow chain using the account address to identify our input account and return values as an object
 // using named returns where provided
-let chain = burrow.createInstance(chainURL, account.Address, {objectReturn: true})
+let chain = burrow.createInstance(chainURL, accountAddress, {objectReturn: true})
 // The ABI file produced by the solidity compiler (through burrow deploy) that acts as a manifest for our deployed contract
 let abi = slurp(abiFile).Abi
 // The deployment receipt written to disk by burrow deploy that contains the deployed address of the contract amongst other things
@@ -74,7 +73,7 @@ app.post('/send/:recipient', (req, res) => param(req.body, 'amount')
         chain.transact.SendTxSync(
             {
                 Inputs: [{
-                    Address: Buffer.from(account.Address, 'hex'),
+                    Address: Buffer.from(accountAddress, 'hex'),
                     Amount: amount
                 }],
                 Outputs: [{
