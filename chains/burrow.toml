@@ -11,7 +11,7 @@
   GRPCServiceEnabled = true
   AllowBadFilePermissions = true
   RemoteAddress = ""
-  KeysDirectory = "/keys"
+  KeysDirectory = ".keys"
 [RPC]
   [RPC.Info]
     Enabled = true
