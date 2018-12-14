@@ -1,10 +1,18 @@
+# A burrow deploy playbook is a sequential set of tasks to perform on a running chain
+# as well as assertions that can be applied to the results of such queries and transactions
+
 jobs:
+
+# Call the update-account job to set the target account to have both power and native token. Power gives us validator rights and responsibilities.
+# Native gives the target account Burrow native token (our eth equivalent) which also implicitly creates the account.
 - name: AddValidator
   update-account:
+    # Target is a playbook variable set with `burrow deploy -e Target=${YourValue}
     target: $Target
     power: 999999991
     native: 9999999999
 
+# Use burrow deploys' query and test assertions to check what we just did worked
 # Pull power from the validator set in the result of query-vals
 - name: CheckPower
   query-vals:
