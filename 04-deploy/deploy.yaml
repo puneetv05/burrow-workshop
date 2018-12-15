@@ -5,8 +5,8 @@ jobs:
       val: 5
 
 - name: simplestorage
-  deploy:
-      contract: get-set.sol
+  build:
+      contract: simplestorage.sol
 
 - name: setStorage
   call:
